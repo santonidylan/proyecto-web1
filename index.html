@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Antonio Lamark — Abogado Penalista</title>
+  <meta name="description" content="Antonio Lamark - Abogado penalista. Defensa y asesoría legal. Contacto y áreas de práctica." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+
+  <!-- Archivo CSS propio (ruta correcta) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg container" aria-label="Navegación principal">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/img/logo.png" alt="Logotipo Antonio Lamark" width="42" height="42">
+        <span class="fw-bold">Antonio Lamark</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#areas">Áreas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-2" href="pages/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-container">
+    <!-- HERO -->
+    <section id="hero" class="py-5">
+      <div class="hero-grid container align-items-center">
+        <div class="hero-content">
+          <small class="eyebrow text-muted">Abogado penalista</small>
+          <h1 class="display-heading">Defensa penal estratégica y asesoría legal personalizada</h1>
+          <p class="lead">Representación en causas penales, asesoramiento preventivo y defensa técnica con experiencia.</p>
+          <p>
+            <a href="pages/contacto.html" class="btn btn-primary btn-lg">Solicitar consulta</a>
+            <a href="#areas" class="btn btn-outline-secondary btn-lg ms-2">Ver áreas</a>
+          </p>
+        </div>
+
+        <figure class="hero-figure" aria-hidden="true">
+          <picture>
+            <source srcset="assets/img/fondo.webp" type="image/webp">
+            <img src="assets/img/fondo.png" alt="Escritorio y documentos legales" class="img-fluid rounded" loading="lazy" width="700">
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ÁREAS -->
+    <section id="areas" class="py-5 bg-light">
+      <div class="container">
+        <header class="mb-4">
+          <h2 class="h3">Áreas de práctica</h2>
+          <p class="text-muted">Defensa penal, delitos económicos, asesoramiento y más.</p>
+        </header>
+
+        <div class="row g-4">
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/abogado.webp" class="card-img-top" alt="Abogado dando asesoría" loading="lazy">
+              <div class="card-body">
+                <h3 class="h5 card-title">Defensa penal</h3>
+                <p class="card-text">Representación en causas penales y asistencia en todas las etapas del proceso.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img src="assets/img/martillo.webp" class="card-img-top" alt="Símbolo de justicia" loading="lazy">
+              <div class="card-body">
+                <h3 class="h5 card-title">Delitos económicos</h3>
+                <p class="card-text">Asesoría en causas complejas de índole económico-financiero.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="h5 card-title">Asesoramiento preventivo</h3>
+                <p class="card-text">Estrategias para minimizar riesgos legales y cumplimiento normativo.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO RÁPIDO -->
+    <section id="contacto-quick" class="py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center">
+          <div>
+            <h3>¿Necesitas una consulta?</h3>
+            <p class="text-muted mb-0">Contactá para evaluar tu caso. Respuesta en 48 horas hábiles.</p>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="pages/contacto.html">Contactar ahora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <small>&copy; <span id="year"></span> Antonio Lamark — Abogado Penalista</small>
+      <nav aria-label="Enlaces de pie">
+        <a class="text-white-50 me-3 small" href="pages/sobre.html">Sobre</a>
+        <a class="text-white-50 small" href="pages/contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
+
+  <!-- Script propio -->
+  <script src="js/scripts.js"></script>
+  <script>
+    // Si no agregaste el año dinámico en scripts.js, lo ponemos aquí como respaldo
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

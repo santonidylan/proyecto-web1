@@ -1,0 +1,15 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Node / builds
+node_modules/
+dist/
+build/
+
+# Env
+.env
+
+# Editor
+.vscode/
+.idea/
