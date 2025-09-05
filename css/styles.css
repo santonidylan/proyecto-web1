@@ -1,101 +1,96 @@
+/* ================================
+   Variables globales
+================================= */
+:root {
+  --color-primario: #00f7ff;
+  --color-secundario: #000000;
+  --color-fondo: #ffffff;
+  --color-texto: #333333;
 
-:root{
-  --primary: #0d6efd;
-  --primary-700: #0b5ed7;
-  --muted: #6c757d;
-  --bg: #ffffff;
-  --container-max: 1100px;
-
-  --fs-xl: clamp(1.6rem, 2.6vw, 2.2rem);
-  --fs-lg: clamp(1.1rem, 1.6vw, 1.35rem);
-  --gap: 1.25rem;
+  --fuente-base: 'Poppins', sans-serif;
+  --espaciado: 1rem;
 }
 
-/* Reset y comportamiento base */
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color: #111;
-  background:var(--bg);
-  overflow-x:hidden; /* evita overflow horizontal */
-  -webkit-font-smoothing:antialiased;
+/* ================================
+   Reset básico
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Contenedor principal */
-.site-container{
-  max-width: var(--container-max);
-  margin-inline:auto;
-  padding-inline:1rem;
+html, body {
+  font-family: var(--fuente-base);
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+  overflow-x: hidden; /* Evitar scroll horizontal */
 }
 
-/* Tipografías */
-.display-heading{
-  font-size: var(--fs-xl);
-  line-height:1.05;
-  margin:0.3rem 0 1rem;
+/* ================================
+   Tipografía escalable
+================================= */
+h1 {
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
+  font-weight: bold;
+}
+h2 {
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
+  margin-bottom: 0.5rem;
+}
+p {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  margin-bottom: 1rem;
 }
 
-/* HERO: grid con fallback a flex en pantallas pequeñas */
-.hero-grid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap);
-  align-items:center;
-  min-height:60vh;
-  padding-block:2rem;
-}
-@media (max-width: 900px){
-  .hero-grid{ grid-template-columns: 1fr; text-align:center }
-  .hero-figure{ order:-1 }
+/* ================================
+   Layout con flex y grid
+================================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--espaciado);
+  background: var(--color-primario);
+  color: var(--color-secundario);
 }
 
-/* Botones: refinamiento sobre Bootstrap */
-.btn-primary{
-  background: linear-gradient(180deg, var(--primary), var(--primary-700)) !important;
-  border: none !important;
-  box-shadow: 0 6px 18px rgba(13,110,253,0.12);
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.btn-primary:hover{ transform: translateY(-3px) }
-
-/* Cards */
-.card{
-  border-radius: 10px;
-  overflow:hidden;
-  border: none;
-  box-shadow: 0 8px 24px rgba(10,10,50,0.06);
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
 }
 
-/* Imágenes: aspecto y comportamiento */
-.card-img-top, .hero-figure img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+nav a {
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-weight: bold;
 }
 
-/* Grid para portfolio/áreas */
-.row.g-4 { gap:1.25rem; }
-
-/* Form controls */
-.form-control{ border-radius:8px; }
-
-/* Footer */
-footer { font-size:0.95rem; }
-
-/* Accesibilidad: prefers-reduced-motion */
-@media (prefers-reduced-motion: reduce){
-  * { transition: none !important; animation: none !important; }
+/* Galería o secciones en cuadrícula */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: var(--espaciado);
 }
 
-/* Utilidades */
-.u-hidden{ display:none !important; }
-.u-mono{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+/* ================================
+   Accesibilidad
+================================= */
+a:focus,
+button:focus {
+  outline: 3px solid var(--color-primario);
+  outline-offset: 2px;
+}
 
-/* Small responsive tweaks */
-@media (max-width: 576px){
-  .display-heading { font-size: 1.3rem; }
-  .site-container { padding-inline: .75rem; }
+/* ================================
+   Footer
+================================= */
+footer {
+  text-align: center;
+  padding: var(--espaciado);
+  background: var(--color-primario);
+  color: var(--color-secundario);
 }

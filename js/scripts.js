@@ -1,6 +1,6 @@
 // scripts.js - validaciones y utilitarios básicos
 document.addEventListener('DOMContentLoaded', function(){
-  // año dinámico (por si la página lo necesita)
+  // año dinámico
   const yearEl = document.getElementById('year');
   if(yearEl) yearEl.textContent = new Date().getFullYear();
 

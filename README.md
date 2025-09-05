@@ -1,15 +1,47 @@
-# MiProyecto - Entrega Avanzada
+ # Proyecto Web 1
 
-Proyecto demo para la entrega: estructura HTML avanzada, CSS avanzado y deploy en GitHub Pages.
+Este proyecto fue desarrollado como parte de la materia **Desarrollo Web 1** en la UTN FRM.  
+El objetivo fue construir un sitio web responsivo aplicando buenas prácticas de **HTML5**, **CSS3** y organización de archivos.
 
-## Ejecutar localmente
-1. Abrir `index.html` en el navegador o usar Live Server en VSCode.
-2. Asegurarse de tener las carpetas `assets/`, `css/` y `js/`.
+---
 
-## Control de versiones
-Se recomienda:
-- main: versión estable
-- feature/<nombre>: trabajo en desarrollo
+## 🚀 Demo en línea
 
-## Deploy
-Usar GitHub Pages (branch `main` o `gh-pages`).
+👉 [Ver sitio publicado en GitHub Pages](https://santonidylan.github.io/proyecto-web1/)
+
+---
+
+## 📂 Estructura del proyecto
+
+- `index.html` → Página principal  
+- `pages/` → Páginas secundarias del sitio  
+- `css/` → Hojas de estilo  
+- `assets/` → Imágenes y otros recursos  
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **HTML5** → Estructura semántica del sitio  
+- **CSS3** → Estilos con variables, grillas modernas y responsive design  
+- **Git & GitHub** → Control de versiones y despliegue en GitHub Pages  
+
+---
+
+## 📌 Características principales
+
+- Diseño **responsivo**, adaptable a desktop y mobile.  
+- Uso de **etiquetas semánticas** para accesibilidad y SEO.  
+- Optimización de imágenes en formato **.webp** con `<picture>` y `loading="lazy"`.  
+- Uso de **variables en :root** y unidades fluidas (`clamp()`) para escalabilidad.  
+- Navegación entre páginas con rutas relativas corregidas.  
+
+---
+
+## 👨‍💻 Autor
+
+**Dylan Santoni**  
+📧 Contacto: *santonidylan00gmail.com*  
+🔗 GitHub: [santonidylan](https://github.com/santonidylan)
+
+---
